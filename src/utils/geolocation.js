@@ -45,7 +45,5 @@ export const getPosition = async () => {
       `/reverse?format=json&lat=${lat}&lon=${long}`
     );
     return data;
-  } catch (error) {
-    getPosition();
-  }
+  } catch (error) {}
 };
